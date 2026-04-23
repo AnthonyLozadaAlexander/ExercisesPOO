@@ -44,11 +44,11 @@ class Estudiante {
             }
         }
         Prom = sumP/cantMaterias;
-        return Math.round(Prom * 100.0) / 100.0;
+        return Math.round(Prom * 100.0) / 100.0; // redondea el promedio a 2 decimales
     }
 
     String mostrarInformacion(){
-        StringBuilder info = new StringBuilder();
+        StringBuilder info = new StringBuilder(); // va guardar la informacion del arreglo materias en un StringBuilder para luego mostrarlo en el return
         for (int i = 0; i < cantMaterias; i++) {
             info.append(materias[i].getNombre()).append("\n").append(materias[i].getCalificacion()).append("\n").append(materias[i].estaAprobado() ? "Aprobado\n\n" : "Reprobado\n\n");
 
