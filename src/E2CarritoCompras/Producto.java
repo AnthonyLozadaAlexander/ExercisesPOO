@@ -2,17 +2,17 @@
 
 class Producto {
 
-    private Integer id;
+    private int id;
     private String nombre;
     private Double precio;
 
-    Producto(Integer id, String nombre, Double precio){
+    Producto(int id, String nombre, Double precio){
         this.id = id;
         this.nombre = nombre;
         this.precio = precio;
     }
 
-    Integer getId(){
+    int getId(){
         return id;
     }
 
