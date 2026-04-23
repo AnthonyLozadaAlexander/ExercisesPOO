@@ -1,4 +1,4 @@
-﻿package E2CarritoCompras;
+package E2CarritoCompras;
 
 public class Carrito {
 
@@ -46,6 +46,8 @@ public class Carrito {
         for (int i = 0; i < cantActual;i++) {
            sbInfo.append(productos[i].mostrarDetalle()).append("\n");
         }
+
+        sbInfo.append("Total A Pagar: " + calcularTotal()).append("\n");
 
         return sbInfo.toString();
     }
