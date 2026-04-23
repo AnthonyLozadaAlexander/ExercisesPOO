@@ -31,4 +31,15 @@ class Estudiante {
         materias[cantMaterias] = nuevaMateria;
         cantMaterias++;
     }
+
+    double calcularPromedio(){
+        double sumP=0, Prom = 0;
+        for (int i = 0; i < materias.length; i++) {
+            if(materias[i] != null){
+                sumP = sumP + materias[i].getCalificacion();
+            }
+        }
+
+        return Prom = sumP/cantMaterias;
+    }
 }
