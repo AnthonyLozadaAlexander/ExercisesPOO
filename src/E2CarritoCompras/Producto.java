@@ -1,4 +1,4 @@
-﻿package E2CarritoCompras;
+package E2CarritoCompras;
 
 class Producto {
 
