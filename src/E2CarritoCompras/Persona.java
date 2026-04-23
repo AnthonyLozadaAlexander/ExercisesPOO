@@ -31,7 +31,8 @@ class Persona {
     }
 
     String datosPersonales(){
-        return "Nombre: " + getNombre() + "\n" +
+        return "\nDatos Personales Del Cliente\n" +
+                "Nombre: " + getNombre() + "\n" +
                 "Edad: " + getEdad() + "\n" +
                 "Cedula: " + getCedula() + "\n";
     }
