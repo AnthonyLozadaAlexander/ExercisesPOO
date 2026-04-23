@@ -39,4 +39,14 @@ public class Carrito {
     double aplicarDescuento(double porcentaje){
         return calcularTotal() - (porcentaje * calcularTotal()/100);
     }
+
+    String mostrarTicket(){
+        StringBuilder sbInfo = new StringBuilder();
+        sbInfo.append("********** TICKET DE COMPRA **********\n");
+        for (int i = 0; i < cantActual;i++) {
+           sbInfo.append(productos[i].mostrarDetalle()).append("\n"));
+        }
+
+        return sbInfo.toString();
+    }
 }
