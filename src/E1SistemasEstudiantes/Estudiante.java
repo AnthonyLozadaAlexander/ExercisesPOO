@@ -42,4 +42,17 @@ class Estudiante {
 
         return Prom = sumP/cantMaterias;
     }
+
+    String mostrarInformacion(){
+        StringBuilder info = new StringBuilder();
+        for (int i = 0; i < materias.length; i++) {
+            info.append(materias[i].getNombre()).append("\n").append(materias[i].getCalificacion()).append("\n").append(materias[i].estaAprobado() ? "Aprobado" : "Reprobado");
+
+        }
+
+        return "Estudiante: " + getNombre() + "\n"
+                + "Matricula: " + getMatricula() + "\n" +
+                "Promedio: " + calcularPromedio() + "\n"
+                + info.toString();
+    }
 }
