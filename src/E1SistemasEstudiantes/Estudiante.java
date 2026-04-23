@@ -34,17 +34,22 @@ class Estudiante {
 
     double calcularPromedio(){
         double sumP=0, Prom = 0;
+        if(cantMaterias == 0){ // si no hubieran materias en el arreglo Materias
+            return 0.0;
+        }
+
         for (int i = 0; i < materias.length; i++) {
             if (materias[i] != null) {
                 sumP = sumP + materias[i].getCalificacion();
             }
         }
-        return Double.parseDouble(String.format("%.2f", Prom = sumP/cantMaterias)); // redondea el promedio a 2 decimales
+        Prom = sumP/cantMaterias;
+        return Math.round(Prom * 100.0) / 100.0;
     }
 
     String mostrarInformacion(){
         StringBuilder info = new StringBuilder();
-        for (int i = 0; i < materias.length; i++) {
+        for (int i = 0; i < cantMaterias; i++) {
             info.append(materias[i].getNombre()).append("\n").append(materias[i].getCalificacion()).append("\n").append(materias[i].estaAprobado() ? "Aprobado\n\n" : "Reprobado\n\n");
 
         }
