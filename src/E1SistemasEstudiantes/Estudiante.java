@@ -35,12 +35,11 @@ class Estudiante {
     double calcularPromedio(){
         double sumP=0, Prom = 0;
         for (int i = 0; i < materias.length; i++) {
-            if(materias[i] != null){
+            if (materias[i] != null) {
                 sumP = sumP + materias[i].getCalificacion();
             }
         }
-        Prom = sumP/cantMaterias;
-        return Math.round(Prom * 100.0) / 100.0;
+        return Double.parseDouble(String.format("%.2f", Prom = sumP/cantMaterias)); // redondea el promedio a 2 decimales
     }
 
     String mostrarInformacion(){
