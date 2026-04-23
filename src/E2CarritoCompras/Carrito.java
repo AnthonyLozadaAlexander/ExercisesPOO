@@ -44,7 +44,7 @@ public class Carrito {
         StringBuilder sbInfo = new StringBuilder();
         sbInfo.append("********** TICKET DE COMPRA **********\n");
         for (int i = 0; i < cantActual;i++) {
-           sbInfo.append(productos[i].mostrarDetalle()).append("\n"));
+           sbInfo.append(productos[i].mostrarDetalle()).append("\n");
         }
 
         return sbInfo.toString();
