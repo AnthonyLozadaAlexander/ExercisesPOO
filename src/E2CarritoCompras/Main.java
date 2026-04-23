@@ -1,7 +1,13 @@
 package E2CarritoCompras;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String op; boolean des=false;
+        Persona Cliente = new Persona("Pedro", 19, "0745839211");
+
         Carrito carrito = new Carrito(5);
         Producto Tablet = new Producto(23, "Samsung S12", 450.00);
         Producto Telefono = new Producto(45, "IPhone 12", 567.00);
@@ -15,9 +21,19 @@ public class Main {
        carrito.agregarProducto(Hamburguesa);
        carrito.agregarProducto(Gaseosa);
 
-        System.out.println(carrito.mostrarTicket());
-        carrito.aplicarDescuento(15);
-        System.out.println("Total a Pagar Con El Descuento Del 15%: " + "\n" +
-                carrito.mostrarTicket());
+        carrito.calcularTotal();
+        System.out.println(Cliente.datosPersonales());
+        System.out.println("--------Lista De Productos---------");
+        System.out.println(carrito.mostrarTicket(des));
+        System.out.println("¿Desea Aplicar Un Descuento? (S/N)");
+        op = input.nextLine();
+        if(op.equalsIgnoreCase("S")){
+            des = true;
+            carrito.aplicarDescuento();
+            System.out.println("    Descuento Aplicado Del 15%");
+        }
+
+        System.out.println(carrito.mostrarTicket(des));
+
     }
 }
