@@ -31,4 +31,12 @@ public class Carrito {
 
         return total;
     }
+
+    double calcularPorcentaje(int porcentaje ){
+        return calcularTotal()*(porcentaje/100);
+    }
+
+    double aplicarDescuento(double porcentaje){
+        return calcularTotal() - (porcentaje * calcularTotal()/100);
+    }
 }
