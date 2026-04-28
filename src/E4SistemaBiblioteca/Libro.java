@@ -1,6 +1,6 @@
-﻿package E4SistemaBiblioteca;
+package E4SistemaBiblioteca;
 
-public class Libro {
+class Libro {
 
     private String titulo;
     private String autor;
@@ -31,5 +31,13 @@ public class Libro {
      void devolver(){
         this.disponible = true;
     }
+
+    @Override
+    public String toString(){
+        return "Titulo: " + titulo + "\n" +
+                "Autor: " + autor + "\n" +
+                "Disponible: " + disponible + "\n";
+    }
+
 
 }
