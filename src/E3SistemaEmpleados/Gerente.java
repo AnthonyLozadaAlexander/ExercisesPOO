@@ -1,9 +1,9 @@
-﻿package E3SistemaEmpleados;
+package E3SistemaEmpleados;
 
 public class Gerente extends Empleado{
     private double bono;
 
-    public Gerente(String nombre, Double salarioBase, double Bono){
+    public Gerente(String nombre, Double salarioBase, double bono){
         super(nombre, salarioBase); // inicializa el constructor del padre Empleado
         this.bono = bono;
     }
