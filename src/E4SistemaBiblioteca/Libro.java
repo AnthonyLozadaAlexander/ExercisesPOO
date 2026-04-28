@@ -12,23 +12,23 @@ public class Libro {
         this.disponible = true;
     }
 
-    public String getTitulo(){
+    String getTitulo(){
         return titulo;
     }
 
-    public String getAutor(){
+     String getAutor(){
         return autor;
     }
 
-    public boolean getDisponible(){
+     boolean getDisponible(){
         return disponible;
     }
 
-    public void prestar(){
+     void prestar(){
         this.disponible = false;
     }
 
-    public void devolver(){
+     void devolver(){
         this.disponible = true;
     }
 
