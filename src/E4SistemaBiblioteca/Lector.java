@@ -13,12 +13,12 @@ public class Lector {
     }
 
     void tomarPrestado(Libro libro){
-        if(cantLibros == librosPrestados.length){
+        if(cantLibros == librosPrestados.length){ // si la cantLibros esta llena a la longitud del arreglo librosPrestados
             System.out.println("Lector no puede llevar mas libros");
             return;
         }
 
-        if(!(libro.getDisponible())){
+        if(!(libro.getDisponible())){ // si el libro no esta disponible
             System.out.println("El libro " + libro.getTitulo() + " no tiene disponibles");
         }
 
@@ -30,7 +30,7 @@ public class Lector {
     }
 
     void mostrarLibros(){
-        if(cantLibros == 0){
+        if(cantLibros == 0){ // si cantidad de libros es igual a 0, es decir no hay libros aun
             System.out.println("No hay libros ingresados");
         }
         for (int i = 0; i < librosPrestados.length; i++) {
