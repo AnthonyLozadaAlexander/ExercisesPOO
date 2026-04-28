@@ -1,9 +1,9 @@
-﻿package E3SistemaEmpleados;
+package E3SistemaEmpleados;
 
 public class Empleado {
 
     protected String nombre;
-    protected Double salarioBase;
+    protected double salarioBase;
 
     public Empleado(String nombre, Double salarioBase){
         this.nombre = nombre;
