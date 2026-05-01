@@ -10,7 +10,7 @@ public class Paypal extends MetodoPago{
 
     @Override
     public void procesarPago(double monto) {
-        System.out.println("Conectando A La Cuenta Paypal de "+ correoElectronico +"\n" + "Pago de $" + monto + " procesando");
+        System.out.println("\nConectando A La Cuenta Paypal de "+ correoElectronico +"\n" + "Pago de $" + monto + " procesando");
         imprimirRecibo(monto);
     }
 }
