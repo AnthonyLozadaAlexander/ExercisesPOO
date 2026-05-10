@@ -5,7 +5,7 @@ public class Plato implements Consumible{
     private Double precioBase;
     private Boolean esVegetariano;
 
-    public Plato(String nombre, Double precioBase, Boolean esVegetariano){
+    public Plato(String nombre, double precioBase, boolean esVegetariano){
         this.nombre = nombre;
         this.precioBase = precioBase;
         this.esVegetariano = esVegetariano;
@@ -25,4 +25,5 @@ public class Plato implements Consumible{
         return "\nPlato: " + nombre + "\n" +
                 "Vegetariano: " + esVegetariano + "\n";
     }
+
 }
