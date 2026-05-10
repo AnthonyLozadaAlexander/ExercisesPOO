@@ -1,4 +1,4 @@
-﻿package E6SistemaPedidosDeRestaurante;
+package E6SistemaPedidosDeRestaurante;
 
 public class Pedido {
     Consumible[] items;
@@ -34,8 +34,8 @@ public class Pedido {
                 System.out.println(items[i].getPrecio());
             }
         }
-        System.out.println("Total a Pagar: " + calcularTotal() + " $");
-        System.out.println("-------------------");
+        System.out.println("\nTotal a Pagar: " + calcularTotal() + " $");
+        System.out.println("-------------------\n");
     }
 
 

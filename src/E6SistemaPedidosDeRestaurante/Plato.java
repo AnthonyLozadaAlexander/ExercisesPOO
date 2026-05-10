@@ -1,4 +1,4 @@
-﻿package E6SistemaPedidosDeRestaurante;
+package E6SistemaPedidosDeRestaurante;
 
 public class Plato implements Consumible{
     private String nombre;
@@ -23,7 +23,7 @@ public class Plato implements Consumible{
     @Override
     public String getDescripcion() {
         return "\nPlato: " + nombre + "\n" +
-                "Vegetariano: " + esVegetariano + "\n";
+                "Vegetariano: " + esVegetariano + "";
     }
 
 }
