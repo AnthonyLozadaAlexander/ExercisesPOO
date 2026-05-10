@@ -1,4 +1,4 @@
-package E5;
+package E5SistemaDePagos;
 
 public abstract class MetodoPago implements Procesable {
     private String titular;
