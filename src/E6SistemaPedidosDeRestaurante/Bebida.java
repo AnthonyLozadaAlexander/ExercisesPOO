@@ -1,4 +1,4 @@
-﻿package E6SistemaPedidosDeRestaurante;
+package E6SistemaPedidosDeRestaurante;
 
 public class Bebida implements Consumible {
     private String nombre;
@@ -36,6 +36,6 @@ public class Bebida implements Consumible {
     @Override
     public String getDescripcion() {
         return "\nBebida: " + "[" + nombre + "]\n" +
-                "\nTamaño: " + "[ " + tipo + "]\n";
+                "Tamaño: " + "[ " + tipo + "]";
     }
 }
