@@ -1,4 +1,4 @@
-﻿package E6SistemaPedidosDeRestaurante;
+package E6SistemaPedidosDeRestaurante;
 
 public interface Consumible {
     double getPrecio();
