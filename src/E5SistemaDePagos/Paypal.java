@@ -1,4 +1,4 @@
-package E5;
+package E5SistemaDePagos;
 
 public class Paypal extends MetodoPago{
     private String correoElectronico;

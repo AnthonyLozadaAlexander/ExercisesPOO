@@ -1,4 +1,4 @@
-package E5;
+package E5SistemaDePagos;
 
 import java.util.Scanner;
 
