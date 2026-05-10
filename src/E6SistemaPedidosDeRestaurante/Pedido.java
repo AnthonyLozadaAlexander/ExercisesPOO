@@ -21,7 +21,9 @@ public class Pedido {
     double calcularTotal(){
         double suma = 0;
         for (int i = 0; i < items.length; i++) {
-            suma = suma + items[i].getPrecio();
+            if(items[i] != null) {
+                suma = suma + items[i].getPrecio();
+            }
         }
         return suma;
     }
