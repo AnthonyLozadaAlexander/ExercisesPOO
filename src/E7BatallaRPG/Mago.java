@@ -3,9 +3,10 @@ package E7BatallaRPG;
 public class Mago extends Personaje{
     private int poderMagico;
     private int mana;
+    private int puntosAtaque;
 
-    public Mago(String nombre, int vida, int poderMagico, int Mana){
-        super(nombre, vida, 0);
+    public Mago(String nombre, int vida, int poderMagico,int puntosAtaque, int Mana){
+        super(nombre, vida, puntosAtaque);
         this.poderMagico = poderMagico;
         this.mana = Mana;
     }
