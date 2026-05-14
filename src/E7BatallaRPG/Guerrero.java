@@ -1,4 +1,4 @@
-﻿package E7BatallaRPG;
+package E7BatallaRPG;
 
 public class Guerrero extends Personaje{
     private int fuerzaExtra;
@@ -13,5 +13,10 @@ public class Guerrero extends Personaje{
         int total = (puntosAtaque + fuerzaExtra);
         Objetivo.recibirDano(total);
         System.out.println("["+nombre+"] ataca con su espada a [" + Objetivo.getNombre() + "] haciendo ["+ total +"] de danio!");
+    }
+
+    @Override
+    public String mostrarInfo(){
+        return "\nPersonaje Tipo: Guerrero" + super.mostrarInfo();
     }
 }
