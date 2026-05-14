@@ -32,4 +32,11 @@ public abstract class Personaje implements Atacante{
         }
         return false;
     }
+
+    public String mostrarInfo(){
+        return "\nNombre: " + nombre +
+                "\nVida: " + vida +
+                "\nPuntos Ataque: " + puntosAtaque +
+                "\n";
+    }
 }
