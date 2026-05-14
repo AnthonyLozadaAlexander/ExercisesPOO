@@ -7,7 +7,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
         String respuesta = "";
         Guerrero guerrero = new Guerrero("Thorfin", 100, 10, 5);
-        Mago mago = new Mago("Gardalf", 50, 15, 3);
+        Mago mago = new Mago("Gardalf", 50, 15, 3, 3);
 
         System.out.println("------------------------------------------------");
         System.out.println("        Informacion De Los Personajes");
