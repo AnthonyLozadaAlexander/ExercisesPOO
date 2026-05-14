@@ -27,7 +27,7 @@ public abstract class Personaje implements Atacante{
     }
 
     public boolean estaVivo(){
-        if(vida >= 0){
+        if(vida > 0){
             return true;
         }
         return false;
