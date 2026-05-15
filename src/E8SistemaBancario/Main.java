@@ -1,4 +1,4 @@
-﻿package E8SistemaBancario;
+package E8SistemaBancario;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,6 +8,11 @@ public class Main {
         c1.transferir(c2, 50.0);
         c1.transferir(c2,50.0, 5);
 
-
+        System.out.println("------------------------------------------------");
+        System.out.println("        Informacion De Las Cuentas");
+        System.out.println("------------------------------------------------");
+        System.out.println(c1.mostrarInfo());
+        System.out.println(c2.mostrarInfo());
+        System.out.println("------------------------------------------------");
     }
 }
