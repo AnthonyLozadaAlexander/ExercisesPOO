@@ -26,6 +26,8 @@ public class Mago extends Personaje{
             objetivo.recibirDano(danioTotal);
             System.out.println("[" + nombre + "] se quedo sin mana y golpea a ["+objetivo.getNombre() + "] por " + danioTotal + " Danio!");
         }
+
+        System.out.println("[" + objetivo.getNombre() + "] Vida Actual: " + objetivo.getVida());
     }
 
     @Override
