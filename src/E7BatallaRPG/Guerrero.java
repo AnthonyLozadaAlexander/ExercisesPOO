@@ -13,6 +13,7 @@ public class Guerrero extends Personaje{
         int total = (puntosAtaque + fuerzaExtra);
         Objetivo.recibirDano(total);
         System.out.println("["+nombre+"] ataca con su espada a [" + Objetivo.getNombre() + "] haciendo ["+ total +"] de danio!");
+        System.out.println("[" + Objetivo.getNombre() + "] Vida Actual: " + Objetivo.getVida());
     }
 
     @Override
