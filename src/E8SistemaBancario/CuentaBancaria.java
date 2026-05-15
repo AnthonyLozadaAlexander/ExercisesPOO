@@ -1,4 +1,4 @@
-﻿package E8SistemaBancario;
+package E8SistemaBancario;
 
 public class CuentaBancaria {
     private static int totalCuentasCreadas = 0; // comparte el mismo atributo para todas las cuentas
@@ -18,7 +18,7 @@ public class CuentaBancaria {
     }
 
     public void retirar(double monto){
-        if(saldo > 0){
+        if(saldo >= monto){
         saldo = saldo - monto;
         }else{
             System.out.println("Fondos Insuficientes");
@@ -38,10 +38,10 @@ public class CuentaBancaria {
     }
 
     void transferir(CuentaBancaria destino, double monto, double comision){
-        double total = 0.0;
-        if(this.saldo >= monto){
-            total = (saldo - monto) - comision;
-            destino.depositar(total);
+        double montoT = monto + comision;
+        if(this.saldo >= montoT){
+            this.saldo = (saldo - monto) - comision;
+            destino.depositar(monto);
         }
     }
 
