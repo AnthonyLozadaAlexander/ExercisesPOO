@@ -5,5 +5,9 @@ public class Main {
         CuentaBancaria.mostrarTotalCuentas();
         CuentaBancaria c1 = new CuentaBancaria("Alicia", 500.0);
         CuentaBancaria c2 = new CuentaBancaria("Bob", 100.0);
+        c1.transferir(c2, 50.0);
+        c1.transferir(c2,50.0, 5);
+
+
     }
 }
