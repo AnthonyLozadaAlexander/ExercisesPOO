@@ -13,6 +13,10 @@ public class CuentaBancaria {
         this.numeroCuenta = totalCuentasCreadas;
     }
 
+    public String getTitular(){
+        return titular;
+    }
+
     public void depositar(double monto){
         saldo = saldo + monto;
     }
