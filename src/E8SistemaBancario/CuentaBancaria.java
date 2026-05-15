@@ -14,13 +14,12 @@ public class CuentaBancaria {
     }
 
     public void depositar(double monto){
-        double total = saldo + monto;
+        saldo = saldo + monto;
     }
 
     public void retirar(double monto){
-        double total = 0.0;
         if(saldo > 0){
-        total = saldo - monto;
+        saldo = saldo - monto;
         }else{
             System.out.println("Fondos Insuficientes");
         }
@@ -34,7 +33,7 @@ public class CuentaBancaria {
         double total = 0.0;
         if(this.saldo >= monto){
               total = saldo - monto;
-              destino.depositar(monto);
+              destino.depositar(total);
         }
     }
 
@@ -42,8 +41,12 @@ public class CuentaBancaria {
         double total = 0.0;
         if(this.saldo >= monto){
             total = (saldo - monto) - comision;
-            destino.depositar(monto);
+            destino.depositar(total);
         }
+    }
+
+    public String mostrarInfo(){
+        return "Nombre: "+titular + "\n" + "Numero de cuenta: " + numeroCuenta + "\n" + "Saldo Cuenta: " + saldo + "\n";
     }
 
 
