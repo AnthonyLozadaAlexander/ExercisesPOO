@@ -39,4 +39,14 @@ public abstract class Animal {
 
         return total;
     }
+
+    public abstract String hacerSonido();
+
+    public String mostrarInfo(){
+        return "Informacion\n" +
+                "Nombre: " + nombre + "\n" +
+                "Edad: " + edad + "\n" +
+                "Tipo: " + tipo + "\n" +
+                "Costo Total: " + calcularCostoTotal();
+    }
 }
