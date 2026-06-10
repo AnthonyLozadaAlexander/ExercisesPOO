@@ -3,10 +3,10 @@
 import java.util.ArrayList;
 
 public abstract class Animal {
-    String nombre;
-    int edad;
-    TipoAnimal tipo;
-    ArrayList<Consulta> historial;
+    private String nombre;
+    private int edad;
+    private TipoAnimal tipo;
+    private ArrayList<Consulta> historial;
 
     public Animal(String nombre, int edad, TipoAnimal tipo){
         this.nombre = nombre;
