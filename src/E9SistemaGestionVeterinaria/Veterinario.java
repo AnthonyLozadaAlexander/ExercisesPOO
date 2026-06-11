@@ -1,4 +1,4 @@
-﻿package E9SistemaGestionVeterinaria;
+package E9SistemaGestionVeterinaria;
 
 public class Veterinario {
 

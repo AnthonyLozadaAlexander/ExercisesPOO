@@ -1,4 +1,4 @@
-﻿package E9SistemaGestionVeterinaria;
+package E9SistemaGestionVeterinaria;
 
 public class Perro extends Animal{
     private String raza;
@@ -15,7 +15,7 @@ public class Perro extends Animal{
 
     @Override
     public String mostrarInfo(){
-        return super.mostrarInfo() +
+        return super.mostrarInfo() + "\n" +
                     "Raza: " + raza;
     }
 }
