@@ -49,4 +49,14 @@ public abstract class Animal {
                 "Tipo: " + tipo + "\n" +
                 "Costo Total: " + calcularCostoTotal();
     }
+
+    public void mostrarHistorial(){
+        if(historial.isEmpty()){
+            System.out.println("Sin consultas registradas");
+        }else{
+            for (int i = 0; i < historial.size(); i++) {
+                System.out.println(historial.get(i).mostrarConsulta());
+            }
+        }
+    }
 }
